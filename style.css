@@ -1,2 +1,70 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
 
+header {
+  background-color: #2B303A;
+  height: 150px;
+  margin: 0;
+}
+
+.main-content {
+  background-color: lightgrey;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.shares-heading {
+  margin: 0 0 30px 20px;
+  font-size: 35px;
+  font-weight: 400;
+  color: #545653;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-gap: 10px;
+  margin: 0 20px;
+}
+
+.card {
+  height: 350px;
+}
+
+.card1 {
+  background-color: black;
+}
+
+.card2 {
+  background-color: white;
+}
+
+.card3 {
+  background-color: black;
+}
+
+.card4 {
+  background-color: white;
+}
+
+.card5 {
+  background-color: black;
+}
+
+.card6 {
+  background-color: white;
+}
+
+.card7 {
+  background-color: black;
+}
+
+.card8 {
+  background-color: white;
+}
