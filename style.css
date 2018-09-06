@@ -3,8 +3,8 @@
 }
 
 body {
-  margin: 0;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 header {
@@ -15,20 +15,20 @@ header {
 }
 
 .icon-section {
-  position: absolute;
-  margin-left: 20px;
-  bottom: 0;
-  height: 100px;
-  width: 500px;
-  display: flex;
   align-items: center;
+  bottom: 0;
+  display: flex;
+  height: 100px;
   justify-content: space-between;
+  margin-left: 20px;
+  position: absolute;
+  width: 500px;
 }
 
 button {
   background: none;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .shares-btn {
@@ -41,14 +41,37 @@ button {
 }
 
 .header-icon {
-  height: 20px;
+  height: 18px;
   position: relative;
-  top: 5px;
-  right: 7px;
+  top: 3px;
+  right: 8px;
 }
 
 .playlists-icon {
   color: #58A4B0;
+}
+
+.username-login {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.username-icon {
+  border-radius: 10px;
+  border: 1px solid white;
+  height: 20px;
+  padding: 2px;
+}
+
+.username-btn {
+  color: #58A4B0;
+}
+
+.logo {
+  font-size: 40px;
 }
 
 .main-content {
@@ -58,25 +81,45 @@ button {
 }
 
 .shares-heading {
-  margin: 0 0 30px 20px;
+  color: #545653;
   font-size: 35px;
   font-weight: 400;
-  color: #545653;
+  margin: 0 0 30px 20px;
 }
 
 .card-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   margin: 0 20px;
 }
 
 .card {
+  display: grid;
+  grid-template-areas: 'photo'
+                       'card-content';
+  grid-template-rows: 1fr 2fr;
   height: 350px;
 }
 
 .card1 {
-  background-color: black;
+  padding: 0;
+  background-color: white;
+}
+
+.images {
+  grid-area: photo;
+}
+
+.rhea-img {
+  object-fit: cover;
+  overflow: hidden;
+  max-height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  grid-area: card-content;
 }
 
 .card2 {
@@ -84,7 +127,7 @@ button {
 }
 
 .card3 {
-  background-color: black;
+  background-color: white;
 }
 
 .card4 {
@@ -92,7 +135,7 @@ button {
 }
 
 .card5 {
-  background-color: black;
+  background-color: white;
 }
 
 .card6 {
@@ -100,7 +143,7 @@ button {
 }
 
 .card7 {
-  background-color: black;
+  background-color: white;
 }
 
 .card8 {
