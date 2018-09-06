@@ -11,6 +11,44 @@ header {
   background-color: #2B303A;
   height: 150px;
   margin: 0;
+  position: relative;
+}
+
+.icon-section {
+  position: absolute;
+  margin-left: 20px;
+  bottom: 0;
+  height: 100px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 14px;
+}
+
+.shares-btn {
+  color: white;
+}
+
+.personal-vid-btn,
+.playlists-btn {
+  color: lightgrey;
+}
+
+.header-icon {
+  height: 20px;
+  position: relative;
+  top: 5px;
+  right: 7px;
+}
+
+.playlists-icon {
+  color: #58A4B0;
 }
 
 .main-content {
