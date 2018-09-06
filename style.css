@@ -1,2 +1,54 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+}
+header {
+  background-color: grey;
+  height: 150px;
+}
 
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  margin: 0 20px;
+}
+
+.card {
+  height: 300px;
+}
+
+.card1 {
+  background-color: black;
+}
+
+.card2 {
+  background-color: lightgrey;
+}
+
+.card3 {
+  background-color: black;
+}
+
+.card4 {
+  background-color: lightgrey;
+}
+
+.card5 {
+  background-color: black;
+}
+
+.card6 {
+  background-color: lightgrey;
+}
+
+.card7 {
+  background-color: black;
+}
+
+.card8 {
+  background-color: lightgrey;
+}
