@@ -4,21 +4,37 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
+
 header {
-  background-color: grey;
+  background-color: #2B303A;
   height: 150px;
+  margin: 0;
+}
+
+.main-content {
+  background-color: lightgrey;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.shares-heading {
+  margin: 0 0 30px 20px;
+  font-size: 35px;
+  font-weight: 400;
+  color: #545653;
 }
 
 .card-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-gap: 10px;
   margin: 0 20px;
 }
 
 .card {
-  height: 300px;
+  height: 350px;
 }
 
 .card1 {
@@ -26,7 +42,7 @@ header {
 }
 
 .card2 {
-  background-color: lightgrey;
+  background-color: white;
 }
 
 .card3 {
@@ -34,7 +50,7 @@ header {
 }
 
 .card4 {
-  background-color: lightgrey;
+  background-color: white;
 }
 
 .card5 {
@@ -42,7 +58,7 @@ header {
 }
 
 .card6 {
-  background-color: lightgrey;
+  background-color: white;
 }
 
 .card7 {
@@ -50,5 +66,5 @@ header {
 }
 
 .card8 {
-  background-color: lightgrey;
+  background-color: white;
 }
