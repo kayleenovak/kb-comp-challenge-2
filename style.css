@@ -99,7 +99,7 @@ button {
   grid-template-areas: 'photo'
                        'card-content';
   grid-template-rows: 1fr 2fr;
-  height: 350px;
+  height: 450px;
 }
 
 .card1 {
@@ -110,13 +110,15 @@ button {
 .images {
   grid-area: photo;
   position: relative;
+  background: black;
 }
 
-.rhea-img {
+.waterfall-img {
   object-fit: cover;
   overflow: hidden;
   max-height: 100%;
   width: 100%;
+  opacity: .7;
 }
 
 .arrow-btn-views {
@@ -132,10 +134,18 @@ button {
 
 .views-heading {
   margin: 0;
+  color: white;
 }
 
 .arrow-btn {
-  height: 35px;
+  background: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.arrow-icon {
+  height: 20px;
   margin: 0;
 }
 
