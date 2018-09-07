@@ -89,7 +89,7 @@ button {
 
 .card-section {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 12px;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   margin: 0 20px;
 }
@@ -109,6 +109,7 @@ button {
 
 .images {
   grid-area: photo;
+  position: relative;
 }
 
 .rhea-img {
@@ -118,36 +119,68 @@ button {
   width: 100%;
 }
 
+.arrow-btn-views {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 8px 15px 8px 8px;
+}
+
+.views-heading {
+  margin: 0;
+}
+
+.arrow-btn {
+  height: 35px;
+  margin: 0;
+}
+
 .card-content {
   grid-area: card-content;
+  padding: 0 20px 20px 20px;
 }
 
 .card-header {
   font-size: 16px;
+  margin-bottom: 3px;
 }
 
 .date-stamp {
   font-size: 12px;
+  margin: 0;
 }
 
 .html-link {
   font-size: 12px;
+  background-color: lightgrey;
+  padding: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .playlist-heading {
-  font-size: 14px;
+  font-size: 11px;
+  margin-bottom: 3px;
 }
 
 .name-playlist {
-  font-size: 14px;
+  font-size: 15px;
+  margin: 0;
 }
 
 .attachments-heading {
-  font-size: 13px;
+  font-size: 11px;
+  margin: 16px 0 3px 0;
 }
 
 .num-attachments {
-  font-size: 16px;
+  font-size: 30px;
+  color: #58A4B0;
+  margin: 0px;
 }
 
 .card2 {
