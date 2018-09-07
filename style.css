@@ -122,6 +122,34 @@ button {
   grid-area: card-content;
 }
 
+.card-header {
+  font-size: 16px;
+}
+
+.date-stamp {
+  font-size: 12px;
+}
+
+.html-link {
+  font-size: 12px;
+}
+
+.playlist-heading {
+  font-size: 14px;
+}
+
+.name-playlist {
+  font-size: 14px;
+}
+
+.attachments-heading {
+  font-size: 13px;
+}
+
+.num-attachments {
+  font-size: 16px;
+}
+
 .card2 {
   background-color: white;
 }
