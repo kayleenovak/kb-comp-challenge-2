@@ -14,6 +14,14 @@ header {
   position: relative;
 }
 
+.menu-on {
+  display: none;
+}
+
+.ham-input {
+  display: none;
+}
+
 .icon-section {
   align-items: center;
   bottom: 0;
@@ -22,6 +30,218 @@ header {
   justify-content: space-between;
   margin-left: 20px;
   position: absolute;
+  width: 600px;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 22px;
+}
+
+.shares-btn {
+  color: white;
+}
+
+.personal-vid-btn,
+.playlists-btn {
+  color: lightgrey;
+}
+
+.header-icon {
+  height: 22px;
+  position: relative;
+  top: 3px;
+  right: 8px;
+}
+
+.playlists-icon {
+  color: #58A4B0;
+}
+
+.username-login {
+  float: right;
+  align-content: right;
+  margin: 5px 20px 0 0;
+}
+
+.username-icons {
+  height: 23px;
+  padding: 2px;
+  margin: 5px;
+  position: relative;
+  top: 10px;
+}
+
+.circle-person {
+  border-radius: 13px;
+  border: 1px solid white;
+}
+
+.username-btn {
+  color: #58A4B0;
+  margin-bottom: 0px;
+  display: block;
+  float: right;
+  font-size: 18px;
+}
+
+.logo-text {
+  font-size: 52px;
+  color: white;
+  margin-top: 65px;
+}
+
+.logo {
+  height: 52px;
+  position: relative;
+  top: 7px;
+}
+
+.main-content {
+  background-color: #e2e4e9;
+  margin: 0;
+  padding: 30px 0 20px 0;
+}
+
+.shares-heading {
+  color: #56585E;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0 0 30px 20px;
+}
+
+.card-section {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 2fr));
+  margin: 0 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-areas: 'photo'
+                       'card-content';
+  grid-template-rows: 1fr 2fr;
+  height: 430px;
+  box-shadow: 2px 2px 2px #A6A8A6, -2px 2px 2px #A6A8A6;
+  background-color: white;
+}
+
+.card1 {
+  padding: 0;
+}
+
+.images {
+  grid-area: photo;
+  position: relative;
+  background: black;
+}
+
+.waterfall-img {
+  object-fit: cover;
+  overflow: hidden;
+  max-height: 100%;
+  width: 100%;
+  opacity: .7;
+}
+
+.arrow-btn-views {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 10px 20px 8px 15px;
+}
+
+.views-heading {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.num-views {
+  font-size: 33px;
+}
+
+.arrow-btn {
+  background: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+
+.arrow-icon {
+  height: 20px;
+  margin: 0;
+}
+
+.card-content {
+  grid-area: card-content;
+  padding: 0 20px 20px 20px;
+}
+
+.card-header {
+  font-size: 19px;
+  margin-bottom: 3px;
+  color: #2b303a;
+}
+
+.date-stamp {
+  font-size: 14px;
+  margin: 0;
+  color: #98a1b3;
+}
+
+.html-link {
+  font-size: 14px;
+  background-color: #e2e4e9;
+  color: #878C96;
+  padding: 8px;
+  margin: 20px 0;
+  word-break: break-all;
+}
+
+.playlist-heading {
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: #2b303a;
+}
+
+.name-playlist {
+  font-size: 18px;
+  margin: 0;
+  color: #2b303a;
+}
+
+.attachments-heading {
+  font-size: 14px;
+  margin: 20px 0 3px 0;
+  color: #2b303a;
+}
+
+.num-attachments {
+  font-size: 35px;
+  color: #58A4B0;
+  margin: 0px;
+}
+
+@media screen and (max-width: 1440px) {
+  .card-section {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 2fr));
+  margin: 0 20px;
+}
+
+.icon-section {
   width: 500px;
 }
 
@@ -51,14 +271,6 @@ button {
   color: #58A4B0;
 }
 
-.username-login {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
-
 .username-icon {
   border-radius: 10px;
   border: 1px solid white;
@@ -68,155 +280,119 @@ button {
 
 .username-btn {
   color: #58A4B0;
+  margin-bottom: 0px;
+  display: block;
+  float: right;
+}
+
+.logo-text {
+  font-size: 45px;
+  color: white;
+  margin-top: 65px;
 }
 
 .logo {
-  font-size: 40px;
-}
-
-.main-content {
-  background-color: lightgrey;
-  margin: 0;
-  padding-top: 30px;
-}
-
-.shares-heading {
-  color: #545653;
-  font-size: 35px;
-  font-weight: 400;
-  margin: 0 0 30px 20px;
-}
-
-.card-section {
-  display: grid;
-  grid-gap: 12px;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  margin: 0 20px;
-}
-
-.card {
-  display: grid;
-  grid-template-areas: 'photo'
-                       'card-content';
-  grid-template-rows: 1fr 2fr;
-  height: 450px;
-}
-
-.card1 {
-  padding: 0;
-  background-color: white;
-}
-
-.images {
-  grid-area: photo;
-  position: relative;
-  background: black;
-}
-
-.waterfall-img {
-  object-fit: cover;
-  overflow: hidden;
-  max-height: 100%;
-  width: 100%;
-  opacity: .7;
-}
-
-.arrow-btn-views {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  top: 0px;
-  left: 0px;
-  margin: 0px;
-  padding: 8px 15px 8px 8px;
-}
-
-.views-heading {
-  margin: 0;
-  color: white;
-}
-
-.arrow-btn {
-  background: white;
   height: 50px;
-  width: 50px;
-  border-radius: 25px;
+  position: relative;
+  top: 7px;
+}
 }
 
-.arrow-icon {
-  height: 20px;
-  margin: 0;
+@media screen and (max-width: 909px) {
+  .icon-section {
+  bottom: 0;
+  height: 150px;
+  width: 250px;
+  padding: 29px 0px;
+  display: block;
+  align-content: center;
 }
 
-.card-content {
-  grid-area: card-content;
-  padding: 0 20px 20px 20px;
+.playlists-btn {  
+  display: block;
+  margin-bottom: 10px;
 }
 
-.card-header {
-  font-size: 16px;
-  margin-bottom: 3px;
+.shares-btn {
+  display: block;
+  margin-bottom: 10px;
 }
 
-.date-stamp {
-  font-size: 12px;
-  margin: 0;
+.personal-vid-btn {
+  display: block;
 }
 
-.html-link {
-  font-size: 12px;
-  background-color: lightgrey;
-  padding: 6px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+.logo-text {
+  font-size: 45px;
+  color: white;
+  margin-top: 46px;
 }
 
-.playlist-heading {
-  font-size: 11px;
-  margin-bottom: 3px;
+.header-icon {
+  height: 18px;
+  position: relative;
+  top: 3px;
+  right: 8px;
+}
 }
 
-.name-playlist {
-  font-size: 15px;
-  margin: 0;
-}
+@media screen and (max-width: 619px) {
+  .menu-on {
+    display: inline;
+    display: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    font-size: 24px;
 
-.attachments-heading {
-  font-size: 11px;
-  margin: 16px 0 3px 0;
-}
+  }
 
-.num-attachments {
-  font-size: 30px;
-  color: #58A4B0;
-  margin: 0px;
-}
+  .ham-input {
+    display: inline;
+    display: absolute;
+    top: 0;
+    left: 0;
+  }
 
-.card2 {
-  background-color: white;
-}
+  .icon-section {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    z-index: 2;
+    height: 130px;
+    display: none; 
+  }
 
-.card3 {
-  background-color: white;
-}
+  #toggle-menu {
+    display: none;
+  }
 
-.card4 {
-  background-color: white;
-}
+  #toggle-menu:checked ~ .icon-section {
+    display: block;
+  }
 
-.card5 {
-  background-color: white;
-}
+  #toggle-menu:checked ~ .menu-off {
+    display: block;
+  }
 
-.card6 {
-  background-color: white;
-}
+  .menu-off {
+    display: block;
+    position: absolute; 
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #2B303A;
+    z-index: 1;
+    display: none;
+  }
 
-.card7 {
-  background-color: white;
-}
-
-.card8 {
-  background-color: white;
+  .playlist-ham-nav {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    z-index: 5;
+  }
 }
